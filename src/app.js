@@ -1,8 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const app = express();
 const router = express.Router();
+
+// Conecta ao banco
+mongoose.connect('mongodb://balta:e296cd9f@localhost:27017/admin')
 
 // Importando as rotas
 const indexRoute =  require('./routes/indexRoute');
