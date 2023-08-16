@@ -6,7 +6,10 @@ const app = express();
 const router = express.Router();
 
 // Conecta ao banco
-mongoose.connect('mongodb://balta:e296cd9f@localhost:27017/admin')
+mongoose.connect('mongodb://balta:e296cd9f@localhost:27017/admin');
+
+// Carrega os Models
+const Product = require('./models/product');
 
 // Importando as rotas
 const indexRoute =  require('./routes/indexRoute');
