@@ -6,6 +6,8 @@ router.get('/', productController.get);
 
 router.get('/:slug', productController.getBySlug);
 
+router.get('/admin/:id', productController.getById);
+
 router.post('/', productController.post);
   
 router.put('/:id', productController.put);
