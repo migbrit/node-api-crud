@@ -10,6 +10,8 @@ mongoose.connect('mongodb://balta:e296cd9f@localhost:27017/admin');
 
 // Carrega os Models
 const Product = require('./models/product');
+const Customer = require('./models/customer');
+const Order = require('./models/order');
 
 // Importando as rotas
 const indexRoute =  require('./routes/indexRoute');
