@@ -1,5 +1,3 @@
-const mongoose = require('mongoose');
-const Product = mongoose.model('Product');
 const ValidationContract = require('../validators/validator.js');
 const ProductRepository = require('../repositories/productRepository.js');
 
