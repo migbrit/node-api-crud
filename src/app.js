@@ -6,7 +6,7 @@ const config = require('./config');
 const app = express();
 const router = express.Router();
 
-// Conecta ao banclco
+// Conecta ao banco
 mongoose.connect(config.connectionString);
 
 // Carrega os Models
